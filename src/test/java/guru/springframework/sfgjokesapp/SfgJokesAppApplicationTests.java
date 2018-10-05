@@ -11,6 +11,7 @@ public class SfgJokesAppApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
