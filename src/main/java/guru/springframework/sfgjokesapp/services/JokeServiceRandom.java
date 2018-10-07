@@ -7,7 +7,12 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 @Component
 public class JokeServiceRandom implements JokeService {
 
-	ChuckNorrisQuotes chuckNorrisQuotes = new ChuckNorrisQuotes();
+	private ChuckNorrisQuotes chuckNorrisQuotes;
+
+	public JokeServiceRandom(ChuckNorrisQuotes chuckNorrisQuotes) {
+		super();
+		this.chuckNorrisQuotes = chuckNorrisQuotes;
+	}
 
 	@Override
 	public String getJoke() {
